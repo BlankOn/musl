@@ -119,5 +119,6 @@ do { \
 	(enaddr)[5] = ((uint8_t *)ipaddr)[3]; \
 } while(0)
 
+struct ether_addr * ether_aton_r(const char *, struct ether_addr *addr);
 
 #endif

@@ -7,7 +7,9 @@ extern "C" {
 
 #include <stdint.h>
 #include <sys/types.h>
+#ifndef _LINUX_IF_ETHER_H
 #include <netinet/if_ether.h>
+#endif
 
 struct ether_addr {
 	uint8_t ether_addr_octet[ETH_ALEN];
