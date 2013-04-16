@@ -22,6 +22,10 @@ TYPEDEF int ptrdiff_t;
 
 TYPEDEF __builtin_va_list va_list;
 
+#ifndef __GNUC_VA_LIST
+typedef __builtin_va_list __gnuc_va_list;
+#endif
+
 #ifndef __cplusplus
 TYPEDEF unsigned wchar_t;
 #endif
